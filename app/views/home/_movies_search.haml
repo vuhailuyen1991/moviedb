@@ -1,0 +1,17 @@
+= form_tag(root_path, method: :get) do
+  .row
+    .col-md-2
+      %label
+        Text:
+        = text_field_tag(:searching_text, params[:searching_text], class: "form-control")
+    .col-md-2
+      %label
+        Category:
+        = select_tag(:category, options_from_collection_for_select(@categories, "id", "name", params[:category]), { include_blank: true, class: "form-control" })
+    .col-md-2
+      %label
+        Rating:
+        = select_tag(:rating, options_for_select((0..5).map{ |rate| [rate, rate] }, params[:rating]), class: "form-control")
+    .col-md-1
+      %br/
+      = submit_tag("Search", class: "btn btn-info form-control")
