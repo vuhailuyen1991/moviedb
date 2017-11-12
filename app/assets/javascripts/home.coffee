@@ -1,7 +1,7 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-$ ->
+$(document).on 'turbolinks:load', ->
   $('.movie_rating').on 'change', (evt) ->
     element = $(evt.currentTarget)
     movie_id = element.data("movie-id")
