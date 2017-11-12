@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  before_action :retrieve_movie, only: %i[show edit update delete destroy]
+  before_action :retrieve_movie, only: %i[show edit update destroy]
 
   def index
     redirect_to root_path
