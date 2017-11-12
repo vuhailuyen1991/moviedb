@@ -18,7 +18,6 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem "pundit"
-gem 'kaminari'
 gem 'simple_form'
 gem "haml-rails", "~> 1.0"
 gem 'will_paginate', '~> 3.1.0'
