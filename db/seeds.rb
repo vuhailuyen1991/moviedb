@@ -7,4 +7,3 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.create([{ :name => 'Drama' }, { :name => 'Action' }, { :name => 'Adventure' }])
-Movie.create([ {:title => 'Titanic', :text => 'Jack and Rose', :category => Category.find_by(:name => 'Drama')} ])

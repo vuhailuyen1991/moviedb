@@ -2,7 +2,7 @@
   %header
     %h1 Movies
     %ul.actions
-      %li= link_to "New Movie", new_movie_path, class: "new" if policy(@movies).create?
+      %li= link_to "New Movie", new_movie_path, class: "new btn btn-info" if policy(@movies).create?
 
 .row
   .col-md-12
