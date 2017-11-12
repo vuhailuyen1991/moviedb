@@ -47,7 +47,7 @@
             %td= movie.text
             %td= movie.category.name
             %td
-              - (1..movie.ratings.average(:rate).to_i).each do
+              - (1..movie.average_rating).each do
                 %span.glyphicon.glyphicon-star{ "aria-hidden" => "true" }
             %td
               %label
