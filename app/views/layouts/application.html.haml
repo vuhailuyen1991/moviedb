@@ -20,9 +20,9 @@
           - unless user_signed_in?
             .navbar-right
               %ul.nav.navbar-nav
-                %li{:class => "#{"active" if current_page?("/users/sign_up")}"}
+                %li{:class => "#{"active" if current_page?(new_user_registration_path)}"}
                   = link_to "Sign up", new_user_registration_path
-                %li{:class => "#{"active" if current_page?("/users/sign_in")}"}
+                %li{:class => "#{"active" if current_page?(user_session_path)}"}
                   = link_to "Sign in", new_user_session_path
           - if user_signed_in?
             .navbar-right
